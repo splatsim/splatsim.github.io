@@ -85,7 +85,7 @@
                         <div class="publication-links">
                             <!-- TODO PDF Link. -->
                             <span class="link-block">
-                <a target="_blank" href=""
+                <a target="_blank" href="https://arxiv.org/abs/2409.10161"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -123,29 +123,11 @@
 </section>
 
 
-
-
-<section class="section">
-    <div class="container is-max-desktop">
-        <!-- Abstract. -->
-        <div class="columns is-centered has-text-centered">
-            <div class="column">
-                <h2 class="title is-3">Abstract</h2>
-                <div class="content has-text-justified">
-                    <p style="font-size: 125%">
-Sim2Real transfer, particularly for manipulation policies relying on RGB images, remains a critical challenge in robotics due to the significant domain shift between synthetic and real-world visual data. In this paper, we propose SplatSim, a novel framework that leverages Gaussian Splatting as the primary rendering primitive to reduce the Sim2Real gap for RGB-based manipulation policies. By replacing traditional mesh representations with Gaussian Splats in simulators, SplatSim produces highly photorealistic synthetic data while maintaining the scalability and cost-efficiency of simulation. We demonstrate the effectiveness of our framework by training manipulation policies within SplatSim and deploying them in the real world in a zero-shot manner, achieving an average success rate of 86.25%, compared to 97.5% for policies trained on real-world data.                     </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
 <section class="section" style="background-color: #f2f2f2;">
     <div class="hero-body">
         <div class="container">
             <h1 style="text-align: center; font-size: 36px; margin-bottom: 20px;">
-                Simulated Pybullet Demonstrations
+                Simulated (Not Real!) Demonstrations by combining Gaussian Splatting and Simulator(PyBullet)
             </h1>
             <div style="display: flex; gap: 10px;">
                 <div class="item item-sweep_without_exceeding">
@@ -164,6 +146,23 @@ Sim2Real transfer, particularly for manipulation policies relying on RGB images,
                     <video poster="" id="sweep_without_exceeding" autoplay controls muted loop height="100%" playbackRate="2.0">
                         <source src="assets/simvideos/tpush_2.mp4" type="video/mp4">
                     </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p style="font-size: 125%">
+Sim2Real transfer, particularly for manipulation policies relying on RGB images, remains a critical challenge in robotics due to the significant domain shift between synthetic and real-world visual data. In this paper, we propose SplatSim, a novel framework that leverages Gaussian Splatting as the primary rendering primitive to reduce the Sim2Real gap for RGB-based manipulation policies. By replacing traditional mesh representations with Gaussian Splats in simulators, SplatSim produces highly photorealistic synthetic data while maintaining the scalability and cost-efficiency of simulation. We demonstrate the effectiveness of our framework by training manipulation policies within SplatSim and deploying them in the real world in a zero-shot manner, achieving an average success rate of 86.25%, compared to 97.5% for policies trained on real-world data.                     </p>
                 </div>
             </div>
         </div>
