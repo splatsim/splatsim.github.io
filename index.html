@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SplatSim: Zero-Shot Sim2Real Transfer of RGB Manipulation Policies Using Gaussian Splatting</title>
 
-    <script>
+    <!-- <script>
         var task_map = {
             "simple-object-manipulation": "simple_object_manipulation",
             "visual-goal-reaching": "visual_goal_reaching",
@@ -33,7 +33,7 @@
             video.playbackRate = 2.0;
             video.play();
         }
-    </script>
+    </script> -->
 
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
           rel="stylesheet">
@@ -57,7 +57,7 @@
 
 
 <section class="hero">
-    <div class="hero-body">
+    <div class="hero-body" style="background-color: #f2f2f2;">
         <div class="container is-max-desktop">
             <div class="columns is-centered">
                 <div class="column has-text-centered">
@@ -119,23 +119,64 @@
                 </div>
             </div>
         </div>
+
+        <section class="section" style="background-color: #f2f2f2;">
+            <div class="container is-max-desktop">
+                <!-- Abstract. -->
+                <div class="columns is-centered has-text-centered">
+                    <div class="column">
+                        <h2 class="title is-3">Abstract</h2>
+                        <div class="content has-text-justified">
+                            <p style="font-size: 125%">
+        Sim2Real transfer, particularly for manipulation policies relying on RGB images, remains a critical challenge in robotics due to the significant domain shift between synthetic and real-world visual data. In this paper, we propose SplatSim, a novel framework that leverages Gaussian Splatting as the primary rendering primitive to reduce the Sim2Real gap for RGB-based manipulation policies. By replacing traditional mesh representations with Gaussian Splats in simulators, SplatSim produces highly photorealistic synthetic data while maintaining the scalability and cost-efficiency of simulation. We demonstrate the effectiveness of our framework by training manipulation policies within SplatSim and deploying them in the real world in a zero-shot manner, achieving an average success rate of 86.25%, compared to 97.5% for policies trained on real-world data.                     </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-</section>
 
 
-<section class="section" style="background-color: #f2f2f2;">
+
+
+
+
+
+<section class="section" style="background-color: #ffffff;">
     <div class="hero-body">
         <div class="container">
-            <h1 style="text-align: center; font-size: 36px; margin-bottom: 20px;">
+            <h1 style="text-align: center; font-size: 48px; margin-bottom: 10px;">
                 Robot Interacting with Flying Objects
             </h1>
+            <h3 style="text-align: center; font-size: 125%; margin-bottom: 20px;">
+                Here’s a fun collection of clips where we reversed gravity in the simulator, highlighting that these renderings are purely simulated.
+            </h3>
             <div style="display: flex; gap: 10px;">
                 <div class="item item-sweep_without_exceeding">
                     <video poster="" id="sweep_without_exceeding" autoplay controls muted loop height="100%" playbackRate="2.0">
-                        <source src="assets/simvideos/output.mp4" type="video/mp4">
+                        <source src="assets/simvideos/flying_objects/flying_objects_3.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-sweep_without_exceeding">
+                    <video poster="" id="sweep_without_exceeding" autoplay controls muted loop height="100%" playbackRate="2.0">
+                        <source src="assets/simvideos/flying_objects/flying_objects_2.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
+
+            <div style="display: flex; gap: 10px;">
+                <div class="item item-sweep_without_exceeding">
+                    <video poster="" id="sweep_without_exceeding" autoplay controls muted loop height="100%" playbackRate="2.0">
+                        <source src="assets/simvideos/flying_objects/flying_objects_4.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="item item-sweep_without_exceeding">
+                    <video poster="" id="sweep_without_exceeding" autoplay controls muted loop height="100%" playbackRate="2.0">
+                        <source src="assets/simvideos/flying_objects/flying_objects_5.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            
         </div>
     </div>
 </section>
@@ -170,7 +211,7 @@
     </div>
 </section>
 
-<section class="section" style="background-color: #f2f2f2;">
+<section class="section" style="background-color: #ffffff;">
     <div class="hero-body">
         <div class="container">
             <h1 style="text-align: center; font-size: 36px; margin-bottom: 20px;">
@@ -209,23 +250,31 @@
     </div>
 </section>
 
-
-
-<section class="section">
-    <div class="container is-max-desktop">
-        <!-- Abstract. -->
-        <div class="columns is-centered has-text-centered">
-            <div class="column">
-                <h2 class="title is-3">Abstract</h2>
-                <div class="content has-text-justified">
-                    <p style="font-size: 125%">
-Sim2Real transfer, particularly for manipulation policies relying on RGB images, remains a critical challenge in robotics due to the significant domain shift between synthetic and real-world visual data. In this paper, we propose SplatSim, a novel framework that leverages Gaussian Splatting as the primary rendering primitive to reduce the Sim2Real gap for RGB-based manipulation policies. By replacing traditional mesh representations with Gaussian Splats in simulators, SplatSim produces highly photorealistic synthetic data while maintaining the scalability and cost-efficiency of simulation. We demonstrate the effectiveness of our framework by training manipulation policies within SplatSim and deploying them in the real world in a zero-shot manner, achieving an average success rate of 86.25%, compared to 97.5% for policies trained on real-world data.                     </p>
-                </div>
+<section class="section" style="background-color: #f2f2f2;">
+    <div class="hero-body">
+        <div class="container" style="max-width: 60%; padding: 0;">
+            <h1 style="text-align: center; font-size: 36px; margin-bottom: 20px;">
+                Video Giving an Overview of SplatSim
+            </h1>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                <iframe 
+                    src="https://youtu.be/r_URAU6bpas" 
+                    title="YouTube video player"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                </iframe>
             </div>
         </div>
     </div>
+    
+    
 </section>
 
+
+
+</section>
 
 
 </body>
