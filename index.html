@@ -53,12 +53,18 @@
     <script src="./static/js/bulma-slider.min.js"></script>
     <script src="./static/js/index.js"></script>
 </head>
-<body>
+<body>background-color: #f2f2f2;
 
 
 <section class="hero">
-    <div class="hero-body" style="background-color: #f2f2f2;">
-        <div class="container is-max-desktop">
+    <div class="hero-body" style="background-color: #f2f2f2; position: relative;  overflow: hidden;">
+        <video autoplay muted loop style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); min-width: 100%; min-height: 100%; z-index: 1; object-fit: cover; opacity: 0.25;">
+            <source src="assets/simvideos/flyingobjects.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+
+          <div style="position: relative; z-index: 2; text-align: center; padding: 20px;">
+        <div class="container is-max-desktop" >
             <div class="columns is-centered">
                 <div class="column has-text-centered">
                     <h1 class="title is-1 publication-title">SplatSim: Zero-Shot Sim2Real Transfer of RGB Manipulation Policies Using Gaussian Splatting</h1>
@@ -133,7 +139,7 @@
         </div>
         
 
-        <section class="section" style="background-color: #f2f2f2;">
+        <section class="section" style="">
             <div class="container is-max-desktop">
                 <!-- Abstract. -->
                 <div class="columns is-centered has-text-centered">
@@ -147,6 +153,7 @@
                 </div>
             </div>
         </section>
+        </div>
     </div>
 
 
