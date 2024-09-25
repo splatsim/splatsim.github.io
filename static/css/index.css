@@ -94,6 +94,7 @@ body {
 
 .publication-authors a {
     color: hsl(121, 100%, 36%) !important;
+    font-weight: 900;
 }
 
 .conference-authors a {
